@@ -1,0 +1,42 @@
+---
+import logo from '../assets/logo.svg';
+import email from '../assets/email.svg';
+import linkedin from '../assets/linkedin.svg';
+---
+
+<div id="hero">
+    <img id="logo" src={logo.src} alt="" fetchpriority="high" />
+    <div id="links">
+        <a id="email" href="mailto:thomaslenihanclarke@gmail.com">
+            <img src={email.src} alt="" fetchpriority="high" />
+        </a>
+        <a id="linkedin" href="https://www.linkedin.com/in/thomas-lenihan-clarke-803210121/" target="_blank">
+            <img src={linkedin.src} alt="" fetchpriority="high" />
+        </a>
+    </div>
+</div>
+
+<style>
+    #hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        width: 30vmin;
+        height: 45vmin;
+    }
+
+    #links {
+        display: flex;
+        gap: 4vmin;
+        align-items: center;
+    }
+
+    #email, #linkedin {
+        width: 9vmin;
+    }
+</style>
